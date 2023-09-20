@@ -1,4 +1,9 @@
 # RunMarathon
+![image](https://github.com/BackToFrancesco/RunMarathon/assets/76614857/da959551-5b3e-43a1-bed2-85e62f4264b8)
+
+
+
+
 This project was developed as final project for Wireless Networks for Mobile Applications 2022/2023 held by Prof. Claudio Palazzi in Univeristy of Padova.
 ## Authors
 Francesco Bacchin, University of Padua, Italy
