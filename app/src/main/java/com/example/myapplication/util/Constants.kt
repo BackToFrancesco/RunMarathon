@@ -13,10 +13,10 @@ object Constants {
     // it is necessary for the beacons that are part of the marathon to have the same first 24 digits of the UUID.
 
     val rankingList = listOf(
-        Rank(id = "1", name = "John", surname = "Doe", totalDurationTime = 100),
-        Rank(id = "2", name = "Alice", surname = "Smith", totalDurationTime = 85),
-        Rank(id = "3", name = "Bob", surname = "Johnson", totalDurationTime = 120),
-        Rank(id = "4", name = "Eva", surname = "Brown", totalDurationTime = 95),
+        Rank(id = "1", name = "John", surname = "Doe", totalDurationTime = 14400),
+        Rank(id = "2", name = "Alice", surname = "Smith", totalDurationTime = 14450),
+        Rank(id = "3", name = "Bob", surname = "Johnson", totalDurationTime = 14500),
+        Rank(id = "4", name = "Eva", surname = "Brown", totalDurationTime = 14560),
         // Add more Rank objects as needed
     )
 }
