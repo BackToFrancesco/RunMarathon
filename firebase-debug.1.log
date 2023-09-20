@@ -1,0 +1,454 @@
+[debug] [2023-01-20T07:15:41.537Z] ----------------------------------------------------------------------
+[debug] [2023-01-20T07:15:41.539Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2023-01-20T07:15:41.540Z] CLI Version:   11.20.0
+[debug] [2023-01-20T07:15:41.540Z] Platform:      win32
+[debug] [2023-01-20T07:15:41.540Z] Node Version:  v16.15.0
+[debug] [2023-01-20T07:15:41.542Z] Time:          Fri Jan 20 2023 08:15:41 GMT+0100 (Ora standard dell’Europa centrale)
+[debug] [2023-01-20T07:15:41.542Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-20T07:15:41.642Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-20T07:15:41.644Z] > authorizing via signed-in user (dardoleila@gmail.com)
+[debug] [2023-01-20T07:15:41.644Z] [iam] checking project marathon-tracker-app for permissions ["firebase.projects.get"]
+[debug] [2023-01-20T07:15:41.650Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/marathon-tracker-app:testIamPermissions [none]
+[debug] [2023-01-20T07:15:41.651Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/marathon-tracker-app:testIamPermissions x-goog-quota-user=projects/marathon-tracker-app
+[debug] [2023-01-20T07:15:41.651Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/marathon-tracker-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-20T07:15:42.522Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/marathon-tracker-app:testIamPermissions 200
+[debug] [2023-01-20T07:15:42.523Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/marathon-tracker-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-20T07:15:42.526Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
+[debug] [2023-01-20T07:15:42.537Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
+[debug] [2023-01-20T07:15:42.538Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":14608},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"database":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"name":"database","host":"127.0.0.1","port":9000,"pid":20860},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[debug] [2023-01-20T07:15:42.538Z] Running emulators:  {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":14608},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"database":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"name":"database","host":"127.0.0.1","port":9000,"pid":20860},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[warn] !  functions: You are already running the Cloud Functions emulator on port 5001. Running the emulator and the Functions shell simultaenously can result in unexpected behavior. 
+[debug] [2023-01-20T07:15:42.551Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-01-20T07:15:42.609Z] [functions] Using node@16 from host.
+[debug] [2023-01-20T07:15:42.610Z] defaultcredentials: writing to file C:\Users\leila\AppData\Roaming\firebase\dardoleila_gmail_com_application_default_credentials.json
+[debug] [2023-01-20T07:15:42.614Z] DEBUG: Setting GAC to C:\Users\leila\AppData\Roaming\firebase\dardoleila_gmail_com_application_default_credentials.json
+[debug] [2023-01-20T07:15:42.616Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marathon-tracker-app/adminSdkConfig [none]
+[debug] [2023-01-20T07:15:42.914Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marathon-tracker-app/adminSdkConfig 200
+[debug] [2023-01-20T07:15:42.914Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marathon-tracker-app/adminSdkConfig {"projectId":"marathon-tracker-app","databaseURL":"https://marathon-tracker-app-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"marathon-tracker-app.appspot.com"}
+[debug] [2023-01-20T07:15:42.961Z] [functions] Watching "C:\Users\leila\Documents\GitHub\wnma-project\MyApplication\functions" for Cloud Functions...
+[debug] [2023-01-20T07:15:42.969Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-01-20T07:15:45.194Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-20T07:15:45.194Z] Building nodejs source
+[debug] [2023-01-20T07:15:45.198Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-20T07:15:45.744Z] Serving at port 9005
+
+[debug] [2023-01-20T07:15:46.098Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"},"checkBeaconValue":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"checkBeaconValue"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-20T07:15:46.111Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-01-20T07:15:46.132Z] [functions] Loaded functions definitions from source: helloWorld, checkBeaconValue.
+[debug] [2023-01-20T07:15:46.133Z] [functions[us-central1-helloWorld]] http function initialized (http://127.0.0.1:5000/marathon-tracker-app/us-central1/helloWorld).
+[debug] [2023-01-20T07:15:46.133Z] [functions[us-central1-checkBeaconValue]] http function initialized (http://127.0.0.1:5000/marathon-tracker-app/us-central1/checkBeaconValue).
+[info] i  functions: Loaded functions: helloWorld, checkBeaconValue 
+[info] i  functions: Connected to running database emulator at 127.0.0.1:9000, calls to this service will affect the emulator 
+[info] i  functions: Connected to running eventarc emulator at 127.0.0.1:9299, calls to this service will affect the emulator 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, pubsub, storage 
+[debug] [2023-01-20T07:15:53.555Z] [work-queue] {"queuedWork":["/marathon-tracker-app/us-central1/checkBeaconValue-2023-01-20T07:15:53.555Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-01-20T07:15:53.556Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/marathon-tracker-app/us-central1/checkBeaconValue-2023-01-20T07:15:53.555Z"],"workRunningCount":1}
+[debug] [2023-01-20T07:15:53.557Z] Accepted request GET /marathon-tracker-app/us-central1/checkBeaconValue --> us-central1-checkBeaconValue
+[debug] [2023-01-20T07:15:53.567Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2023-01-20T07:15:53.568Z] DEBUG: [functions] Got req.url=/marathon-tracker-app/us-central1/checkBeaconValue, mapping to path=/
+[debug] [2023-01-20T07:15:53.756Z] DEBUG: [worker-pool] addWorker(us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:15:53.757Z] DEBUG: [worker-pool] Adding worker with key us-central1-checkBeaconValue, total=1
+[debug] [2023-01-20T07:15:55.671Z] DEBUG: [runtime-status] [6584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2023-01-20T07:15:55.675Z] DEBUG: [runtime-status] [6584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:15:55.676Z] DEBUG: [runtime-status] [6584] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2023-01-20T07:15:55.678Z] DEBUG: [runtime-status] [6584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:15:55.986Z] DEBUG: [runtime-status] [6584] Checked functions.config() {"config":{}}
+[debug] [2023-01-20T07:15:55.987Z] DEBUG: [runtime-status] [6584] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}}
+[debug] [2023-01-20T07:15:55.988Z] DEBUG: [runtime-status] [6584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:15:55.990Z] DEBUG: [runtime-status] [6584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2023-01-20T07:15:55.994Z] DEBUG: [runtime-status] [6584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:15:55.995Z] DEBUG: [runtime-status] [6584] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2023-01-20T07:15:55.997Z] DEBUG: [runtime-status] [6584] initializeApp(DEFAULT) {"storageBucket":"marathon-tracker-app.appspot.com","databaseURL":"http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb","projectId":"marathon-tracker-app"}
+[debug] [2023-01-20T07:15:56.005Z] DEBUG: [runtime-status] [6584] Functions runtime initialized. {"cwd":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions","node_version":"16.15.0"}
+[debug] [2023-01-20T07:15:56.006Z] DEBUG: [runtime-status] [6584] Listening to port: \\?\pipe\fire_emu_f5bf2dc9a251717f
+[debug] [2023-01-20T07:15:56.091Z] DEBUG: [worker-us-central1-checkBeaconValue-c50015ff-5cd3-402e-926f-cd78c3fa4ad1]: IDLE
+[debug] [2023-01-20T07:15:56.091Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:15:56.092Z] DEBUG: [worker-us-central1-checkBeaconValue-c50015ff-5cd3-402e-926f-cd78c3fa4ad1]: BUSY
+[debug] [2023-01-20T07:15:56.098Z] [functions] Beginning execution of "checkBeaconValue"
+[info] >  body {} {"user":"body {}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m body {}"}}
+[info] >  idBeaconReceived 1 {"user":"idBeaconReceived 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeaconReceived 1"}}
+[info] >  idMarathonReceived 1 {"user":"idMarathonReceived 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idMarathonReceived 1"}}
+[info] >  idBeacon null {"user":"idBeacon null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeacon null"}}
+[info] >  idBeacon null {"user":"idBeacon null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeacon null"}}
+[debug] [2023-01-20T07:15:56.196Z] DEBUG: [worker-us-central1-checkBeaconValue-c50015ff-5cd3-402e-926f-cd78c3fa4ad1]: IDLE
+[debug] [2023-01-20T07:15:56.197Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  [2023-01-20T07:15:56.194Z]  @firebase/database: FIREBASE WARNING: Using an unspecified index. Your data will be downloaded and filtered on the client. Consider adding ".indexOn": "idMarathon" at /marathon to your security rules for better performance.  {"user":"[2023-01-20T07:15:56.194Z]  @firebase/database: FIREBASE WARNING: Using an unspecified index. Your data will be downloaded and filtered on the client. Consider adding \".indexOn\": \"idMarathon\" at /marathon to your security rules for better performance. ","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m [2023-01-20T07:15:56.194Z]  @firebase/database: FIREBASE WARNING: Using an unspecified index. Your data will be downloaded and filtered on the client. Consider adding \".indexOn\": \"idMarathon\" at /marathon to your security rules for better performance. "}}
+[debug] [2023-01-20T07:15:56.198Z] [functions] Finished "checkBeaconValue" in 96.081ms
+[debug] [2023-01-20T07:21:58.462Z] DEBUG: File C:\Users\leila\Documents\GitHub\wnma-project\MyApplication\functions\index.js changed, reloading triggers
+[debug] [2023-01-20T07:21:59.473Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-01-20T07:22:02.652Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-20T07:22:02.653Z] Building nodejs source
+[debug] [2023-01-20T07:22:02.654Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-20T07:22:03.241Z] Serving at port 9005
+
+[debug] [2023-01-20T07:22:03.578Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"},"checkBeaconValue":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"checkBeaconValue"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://localhost:9005/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:9005 {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://localhost:9005/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:9005"}}
+[debug] [2023-01-20T07:22:18.181Z] DEBUG: File C:\Users\leila\Documents\GitHub\wnma-project\MyApplication\functions\index.js changed, reloading triggers
+[debug] [2023-01-20T07:22:19.185Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-01-20T07:22:21.533Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-20T07:22:21.533Z] Building nodejs source
+[debug] [2023-01-20T07:22:21.534Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-20T07:22:22.113Z] Serving at port 9005
+
+[debug] [2023-01-20T07:22:22.485Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"},"checkBeaconValue":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"checkBeaconValue"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-20T07:22:22.492Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-01-20T07:22:22.506Z] [functions] Loaded functions definitions from source: helloWorld, checkBeaconValue.
+[debug] [2023-01-20T07:22:22.507Z] DEBUG: [worker-pool] Shutting down IDLE worker (us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:22:22.507Z] DEBUG: [worker-us-central1-checkBeaconValue-c50015ff-5cd3-402e-926f-cd78c3fa4ad1]: FINISHING
+[debug] [2023-01-20T07:22:22.517Z] DEBUG: [worker-us-central1-checkBeaconValue-c50015ff-5cd3-402e-926f-cd78c3fa4ad1]: exited
+[debug] [2023-01-20T07:22:22.517Z] DEBUG: [worker-us-central1-checkBeaconValue-c50015ff-5cd3-402e-926f-cd78c3fa4ad1]: FINISHED
+[debug] [2023-01-20T07:22:22.980Z] [work-queue] {"queuedWork":["/marathon-tracker-app/us-central1/checkBeaconValue-2023-01-20T07:22:22.980Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-01-20T07:22:22.980Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/marathon-tracker-app/us-central1/checkBeaconValue-2023-01-20T07:22:22.980Z"],"workRunningCount":1}
+[debug] [2023-01-20T07:22:22.980Z] Accepted request GET /marathon-tracker-app/us-central1/checkBeaconValue --> us-central1-checkBeaconValue
+[debug] [2023-01-20T07:22:22.987Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2023-01-20T07:22:22.988Z] DEBUG: [functions] Got req.url=/marathon-tracker-app/us-central1/checkBeaconValue, mapping to path=/
+[debug] [2023-01-20T07:22:22.988Z] DEBUG: [worker-pool] Cleaned up workers for us-central1-checkBeaconValue: 1 --> 0
+[debug] [2023-01-20T07:22:23.175Z] DEBUG: [worker-pool] addWorker(us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:22:23.176Z] DEBUG: [worker-pool] Adding worker with key us-central1-checkBeaconValue, total=1
+[debug] [2023-01-20T07:22:25.121Z] DEBUG: [runtime-status] [2968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2023-01-20T07:22:25.126Z] DEBUG: [runtime-status] [2968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:22:25.127Z] DEBUG: [runtime-status] [2968] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2023-01-20T07:22:25.128Z] DEBUG: [runtime-status] [2968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:22:25.455Z] DEBUG: [runtime-status] [2968] Checked functions.config() {"config":{}}
+[debug] [2023-01-20T07:22:25.456Z] DEBUG: [runtime-status] [2968] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}}
+[debug] [2023-01-20T07:22:25.457Z] DEBUG: [runtime-status] [2968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:22:25.459Z] DEBUG: [runtime-status] [2968] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2023-01-20T07:22:25.463Z] DEBUG: [runtime-status] [2968] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:22:25.463Z] DEBUG: [runtime-status] [2968] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2023-01-20T07:22:25.467Z] DEBUG: [runtime-status] [2968] initializeApp(DEFAULT) {"storageBucket":"marathon-tracker-app.appspot.com","databaseURL":"http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb","projectId":"marathon-tracker-app"}
+[debug] [2023-01-20T07:22:25.480Z] DEBUG: [runtime-status] [2968] Functions runtime initialized. {"cwd":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions","node_version":"16.15.0"}
+[debug] [2023-01-20T07:22:25.480Z] DEBUG: [runtime-status] [2968] Listening to port: \\?\pipe\fire_emu_ac099cf3185c214f
+[debug] [2023-01-20T07:22:25.513Z] DEBUG: [worker-us-central1-checkBeaconValue-e5cd9d8f-4b0e-41de-912c-43a04943b50b]: IDLE
+[debug] [2023-01-20T07:22:25.513Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:22:25.513Z] DEBUG: [worker-us-central1-checkBeaconValue-e5cd9d8f-4b0e-41de-912c-43a04943b50b]: BUSY
+[debug] [2023-01-20T07:22:25.519Z] [functions] Beginning execution of "checkBeaconValue"
+[info] >  body {} {"user":"body {}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m body {}"}}
+[info] >  idBeaconReceived 1 {"user":"idBeaconReceived 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeaconReceived 1"}}
+[info] >  idMarathonReceived 1 {"user":"idMarathonReceived 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idMarathonReceived 1"}}
+[info] >  database Database { {"user":"database Database {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m database Database {"}}
+[info] >    _delegate: Database { {"user":"  _delegate: Database {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   _delegate: Database {"}}
+[info] >      _repoInternal: Repo { {"user":"    _repoInternal: Repo {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     _repoInternal: Repo {"}}
+[info] >        repoInfo_: [RepoInfo], {"user":"      repoInfo_: [RepoInfo],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       repoInfo_: [RepoInfo],"}}
+[info] >        forceRestClient_: false, {"user":"      forceRestClient_: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       forceRestClient_: false,"}}
+[info] >        authTokenProvider_: [EmulatorTokenProvider], {"user":"      authTokenProvider_: [EmulatorTokenProvider],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       authTokenProvider_: [EmulatorTokenProvider],"}}
+[info] >        appCheckProvider_: [AppCheckTokenProvider], {"user":"      appCheckProvider_: [AppCheckTokenProvider],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       appCheckProvider_: [AppCheckTokenProvider],"}}
+[info] >        dataUpdateCount: 0, {"user":"      dataUpdateCount: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       dataUpdateCount: 0,"}}
+[info] >        statsListener_: null, {"user":"      statsListener_: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       statsListener_: null,"}}
+[info] >        eventQueue_: [EventQueue], {"user":"      eventQueue_: [EventQueue],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       eventQueue_: [EventQueue],"}}
+[info] >        nextWriteId_: 1, {"user":"      nextWriteId_: 1,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       nextWriteId_: 1,"}}
+[info] >        interceptServerDataCallback_: null, {"user":"      interceptServerDataCallback_: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       interceptServerDataCallback_: null,"}}
+[info] >        onDisconnect_: [Object], {"user":"      onDisconnect_: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       onDisconnect_: [Object],"}}
+[info] >        transactionQueueTree_: [Tree], {"user":"      transactionQueueTree_: [Tree],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       transactionQueueTree_: [Tree],"}}
+[info] >        persistentConnection_: null, {"user":"      persistentConnection_: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       persistentConnection_: null,"}}
+[info] >        key: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb' {"user":"      key: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       key: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb'"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      app: FirebaseApp { {"user":"    app: FirebaseApp {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     app: FirebaseApp {"}}
+[info] >        appStore: [AppStore], {"user":"      appStore: [AppStore],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       appStore: [AppStore],"}}
+[info] >        services_: [Object], {"user":"      services_: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       services_: [Object],"}}
+[info] >        isDeleted_: false, {"user":"      isDeleted_: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       isDeleted_: false,"}}
+[info] >        name_: '[DEFAULT]', {"user":"      name_: '[DEFAULT]',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       name_: '[DEFAULT]',"}}
+[info] >        options_: [Object], {"user":"      options_: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       options_: [Object],"}}
+[info] >        INTERNAL: [FirebaseAppInternals], {"user":"      INTERNAL: [FirebaseAppInternals],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       INTERNAL: [FirebaseAppInternals],"}}
+[info] >        auth: [Function (anonymous)], {"user":"      auth: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       auth: [Function (anonymous)],"}}
+[info] >        appCheck: [Function (anonymous)], {"user":"      appCheck: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       appCheck: [Function (anonymous)],"}}
+[info] >        database: [Function (anonymous)], {"user":"      database: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       database: [Function (anonymous)],"}}
+[info] >        messaging: [Function (anonymous)], {"user":"      messaging: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       messaging: [Function (anonymous)],"}}
+[info] >        storage: [Function (anonymous)], {"user":"      storage: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       storage: [Function (anonymous)],"}}
+[info] >        firestore: [Function (anonymous)], {"user":"      firestore: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       firestore: [Function (anonymous)],"}}
+[info] >        instanceId: [Function (anonymous)], {"user":"      instanceId: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       instanceId: [Function (anonymous)],"}}
+[info] >        installations: [Function (anonymous)], {"user":"      installations: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       installations: [Function (anonymous)],"}}
+[info] >        machineLearning: [Function (anonymous)], {"user":"      machineLearning: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       machineLearning: [Function (anonymous)],"}}
+[info] >        projectManagement: [Function (anonymous)], {"user":"      projectManagement: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       projectManagement: [Function (anonymous)],"}}
+[info] >        securityRules: [Function (anonymous)], {"user":"      securityRules: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       securityRules: [Function (anonymous)],"}}
+[info] >        remoteConfig: [Function (anonymous)], {"user":"      remoteConfig: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       remoteConfig: [Function (anonymous)],"}}
+[info] >        __extended: true {"user":"      __extended: true","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       __extended: true"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      type: 'database', {"user":"    type: 'database',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     type: 'database',"}}
+[info] >      _instanceStarted: false {"user":"    _instanceStarted: false","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     _instanceStarted: false"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    app: FirebaseApp { {"user":"  app: FirebaseApp {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   app: FirebaseApp {"}}
+[info] >      appStore: AppStore { appStore: [Map] }, {"user":"    appStore: AppStore { appStore: [Map] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     appStore: AppStore { appStore: [Map] },"}}
+[info] >      services_: { database: [DatabaseService] }, {"user":"    services_: { database: [DatabaseService] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     services_: { database: [DatabaseService] },"}}
+[info] >      isDeleted_: false, {"user":"    isDeleted_: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     isDeleted_: false,"}}
+[info] >      name_: '[DEFAULT]', {"user":"    name_: '[DEFAULT]',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     name_: '[DEFAULT]',"}}
+[info] >      options_: { {"user":"    options_: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     options_: {"}}
+[info] >        storageBucket: 'marathon-tracker-app.appspot.com', {"user":"      storageBucket: 'marathon-tracker-app.appspot.com',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       storageBucket: 'marathon-tracker-app.appspot.com',"}}
+[info] >        databaseURL: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb', {"user":"      databaseURL: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       databaseURL: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb',"}}
+[info] >        projectId: 'marathon-tracker-app', {"user":"      projectId: 'marathon-tracker-app',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       projectId: 'marathon-tracker-app',"}}
+[info] >        credential: [RefreshTokenCredential] {"user":"      credential: [RefreshTokenCredential]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       credential: [RefreshTokenCredential]"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      INTERNAL: FirebaseAppInternals { {"user":"    INTERNAL: FirebaseAppInternals {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     INTERNAL: FirebaseAppInternals {"}}
+[info] >        credential_: [RefreshTokenCredential], {"user":"      credential_: [RefreshTokenCredential],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       credential_: [RefreshTokenCredential],"}}
+[info] >        tokenListeners_: [Array] {"user":"      tokenListeners_: [Array]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       tokenListeners_: [Array]"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      auth: [Function (anonymous)], {"user":"    auth: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     auth: [Function (anonymous)],"}}
+[info] >      appCheck: [Function (anonymous)], {"user":"    appCheck: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     appCheck: [Function (anonymous)],"}}
+[info] >      database: [Function (anonymous)], {"user":"    database: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     database: [Function (anonymous)],"}}
+[info] >      messaging: [Function (anonymous)], {"user":"    messaging: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     messaging: [Function (anonymous)],"}}
+[info] >      storage: [Function (anonymous)], {"user":"    storage: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     storage: [Function (anonymous)],"}}
+[info] >      firestore: [Function (anonymous)], {"user":"    firestore: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     firestore: [Function (anonymous)],"}}
+[info] >      instanceId: [Function (anonymous)], {"user":"    instanceId: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     instanceId: [Function (anonymous)],"}}
+[info] >      installations: [Function (anonymous)], {"user":"    installations: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     installations: [Function (anonymous)],"}}
+[info] >      machineLearning: [Function (anonymous)], {"user":"    machineLearning: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     machineLearning: [Function (anonymous)],"}}
+[info] >      projectManagement: [Function (anonymous)], {"user":"    projectManagement: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     projectManagement: [Function (anonymous)],"}}
+[info] >      securityRules: [Function (anonymous)], {"user":"    securityRules: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     securityRules: [Function (anonymous)],"}}
+[info] >      remoteConfig: [Function (anonymous)], {"user":"    remoteConfig: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     remoteConfig: [Function (anonymous)],"}}
+[info] >      __extended: true {"user":"    __extended: true","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     __extended: true"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    INTERNAL: { {"user":"  INTERNAL: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   INTERNAL: {"}}
+[info] >      delete: [Function: delete], {"user":"    delete: [Function: delete],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     delete: [Function: delete],"}}
+[info] >      forceWebSockets: [Function: forceWebSockets], {"user":"    forceWebSockets: [Function: forceWebSockets],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     forceWebSockets: [Function: forceWebSockets],"}}
+[info] >      forceLongPolling: [Function: forceLongPolling] {"user":"    forceLongPolling: [Function: forceLongPolling]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     forceLongPolling: [Function: forceLongPolling]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    getRules: [Function (anonymous)], {"user":"  getRules: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   getRules: [Function (anonymous)],"}}
+[info] >    getRulesJSON: [Function (anonymous)], {"user":"  getRulesJSON: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   getRulesJSON: [Function (anonymous)],"}}
+[info] >    setRules: [Function (anonymous)] {"user":"  setRules: [Function (anonymous)]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   setRules: [Function (anonymous)]"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[warn] !  functions: TypeError: admin.database(...).child is not a function
+    at C:\Users\leila\Documents\GitHub\wnma-project\MyApplication\functions\index.js:24:40
+    at cloudFunction (C:\Users\leila\Documents\GitHub\wnma-project\MyApplication\functions\node_modules\firebase-functions\lib\v1\providers\https.js:51:16)
+    at C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:530:16
+    at runFunction (C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:504:15)
+    at runHTTPS (C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:529:11)
+    at C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:694:27
+    at Layer.handle [as handle_request] (C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:137:13)
+    at next (C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:131:14)
+    at next (C:\Users\leila\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:131:14) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"TypeError: admin.database(...).child is not a function\n    at C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\index.js:24:40\n    at cloudFunction (C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\providers\\https.js:51:16)\n    at C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:530:16\n    at runFunction (C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:504:15)\n    at runHTTPS (C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:529:11)\n    at C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:694:27\n    at Layer.handle [as handle_request] (C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at next (C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:131:14)\n    at next (C:\\Users\\leila\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:131:14)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2023-01-20T07:22:25.562Z] [functions] Finished "checkBeaconValue" in 13.0211ms
+[debug] [2023-01-20T07:22:25.564Z] DEBUG: [worker-us-central1-checkBeaconValue-e5cd9d8f-4b0e-41de-912c-43a04943b50b]: IDLE
+[debug] [2023-01-20T07:22:25.564Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-01-20T07:22:25.575Z] DEBUG: [worker-us-central1-checkBeaconValue-e5cd9d8f-4b0e-41de-912c-43a04943b50b]: exited
+[debug] [2023-01-20T07:22:25.576Z] DEBUG: [worker-us-central1-checkBeaconValue-e5cd9d8f-4b0e-41de-912c-43a04943b50b]: FINISHED
+[debug] [2023-01-20T07:23:39.898Z] DEBUG: File C:\Users\leila\Documents\GitHub\wnma-project\MyApplication\functions\index.js changed, reloading triggers
+[debug] [2023-01-20T07:23:40.903Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2023-01-20T07:23:43.382Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-01-20T07:23:43.382Z] Building nodejs source
+[debug] [2023-01-20T07:23:43.384Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-01-20T07:23:44.025Z] Serving at port 9006
+
+[debug] [2023-01-20T07:23:44.398Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"helloWorld"},"checkBeaconValue":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"checkBeaconValue"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-01-20T07:23:44.404Z] shutdown requested via /__/quitquitquit
+
+[debug] [2023-01-20T07:23:44.429Z] [functions] Loaded functions definitions from source: helloWorld, checkBeaconValue.
+[debug] [2023-01-20T07:40:16.170Z] [work-queue] {"queuedWork":["/marathon-tracker-app/us-central1/checkBeaconValue-2023-01-20T07:40:16.170Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-01-20T07:40:16.171Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/marathon-tracker-app/us-central1/checkBeaconValue-2023-01-20T07:40:16.170Z"],"workRunningCount":1}
+[debug] [2023-01-20T07:40:16.171Z] Accepted request GET /marathon-tracker-app/us-central1/checkBeaconValue --> us-central1-checkBeaconValue
+[debug] [2023-01-20T07:40:16.177Z] DEBUG: [functions] Runtime ready! Sending request!
+[debug] [2023-01-20T07:40:16.178Z] DEBUG: [functions] Got req.url=/marathon-tracker-app/us-central1/checkBeaconValue, mapping to path=/
+[debug] [2023-01-20T07:40:16.178Z] DEBUG: [worker-pool] Cleaned up workers for us-central1-checkBeaconValue: 1 --> 0
+[debug] [2023-01-20T07:40:16.369Z] DEBUG: [worker-pool] addWorker(us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:40:16.369Z] DEBUG: [worker-pool] Adding worker with key us-central1-checkBeaconValue, total=1
+[debug] [2023-01-20T07:40:18.483Z] DEBUG: [runtime-status] [640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2023-01-20T07:40:18.491Z] DEBUG: [runtime-status] [640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:40:18.492Z] DEBUG: [runtime-status] [640] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2023-01-20T07:40:18.492Z] DEBUG: [runtime-status] [640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:40:18.828Z] DEBUG: [runtime-status] [640] Checked functions.config() {"config":{}}
+[debug] [2023-01-20T07:40:18.828Z] DEBUG: [runtime-status] [640] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}}
+[debug] [2023-01-20T07:40:18.830Z] DEBUG: [runtime-status] [640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:40:18.832Z] DEBUG: [runtime-status] [640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2023-01-20T07:40:18.837Z] DEBUG: [runtime-status] [640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.1","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}
+[debug] [2023-01-20T07:40:18.837Z] DEBUG: [runtime-status] [640] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2023-01-20T07:40:18.841Z] DEBUG: [runtime-status] [640] initializeApp(DEFAULT) {"storageBucket":"marathon-tracker-app.appspot.com","databaseURL":"http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb","projectId":"marathon-tracker-app"}
+[debug] [2023-01-20T07:40:18.850Z] DEBUG: [runtime-status] [640] Functions runtime initialized. {"cwd":"C:\\Users\\leila\\Documents\\GitHub\\wnma-project\\MyApplication\\functions","node_version":"16.15.0"}
+[debug] [2023-01-20T07:40:18.851Z] DEBUG: [runtime-status] [640] Listening to port: \\?\pipe\fire_emu_4b915481b9abd690
+[debug] [2023-01-20T07:40:18.919Z] DEBUG: [worker-us-central1-checkBeaconValue-ab1a63da-9b70-4e49-b11e-53c21dc04d72]: IDLE
+[debug] [2023-01-20T07:40:18.919Z] DEBUG: [worker-pool] submitRequest(triggerId=us-central1-checkBeaconValue)
+[debug] [2023-01-20T07:40:18.920Z] DEBUG: [worker-us-central1-checkBeaconValue-ab1a63da-9b70-4e49-b11e-53c21dc04d72]: BUSY
+[debug] [2023-01-20T07:40:18.924Z] [functions] Beginning execution of "checkBeaconValue"
+[info] >  body {} {"user":"body {}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m body {}"}}
+[info] >  idBeaconReceived 1 {"user":"idBeaconReceived 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeaconReceived 1"}}
+[info] >  idMarathonReceived 1 {"user":"idMarathonReceived 1","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idMarathonReceived 1"}}
+[info] >  database Database { {"user":"database Database {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m database Database {"}}
+[info] >    _delegate: Database { {"user":"  _delegate: Database {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   _delegate: Database {"}}
+[info] >      _repoInternal: Repo { {"user":"    _repoInternal: Repo {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     _repoInternal: Repo {"}}
+[info] >        repoInfo_: [RepoInfo], {"user":"      repoInfo_: [RepoInfo],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       repoInfo_: [RepoInfo],"}}
+[info] >        forceRestClient_: false, {"user":"      forceRestClient_: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       forceRestClient_: false,"}}
+[info] >        authTokenProvider_: [EmulatorTokenProvider], {"user":"      authTokenProvider_: [EmulatorTokenProvider],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       authTokenProvider_: [EmulatorTokenProvider],"}}
+[info] >        appCheckProvider_: [AppCheckTokenProvider], {"user":"      appCheckProvider_: [AppCheckTokenProvider],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       appCheckProvider_: [AppCheckTokenProvider],"}}
+[info] >        dataUpdateCount: 0, {"user":"      dataUpdateCount: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       dataUpdateCount: 0,"}}
+[info] >        statsListener_: null, {"user":"      statsListener_: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       statsListener_: null,"}}
+[info] >        eventQueue_: [EventQueue], {"user":"      eventQueue_: [EventQueue],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       eventQueue_: [EventQueue],"}}
+[info] >        nextWriteId_: 1, {"user":"      nextWriteId_: 1,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       nextWriteId_: 1,"}}
+[info] >        interceptServerDataCallback_: null, {"user":"      interceptServerDataCallback_: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       interceptServerDataCallback_: null,"}}
+[info] >        onDisconnect_: [Object], {"user":"      onDisconnect_: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       onDisconnect_: [Object],"}}
+[info] >        transactionQueueTree_: [Tree], {"user":"      transactionQueueTree_: [Tree],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       transactionQueueTree_: [Tree],"}}
+[info] >        persistentConnection_: null, {"user":"      persistentConnection_: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       persistentConnection_: null,"}}
+[info] >        key: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb' {"user":"      key: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       key: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb'"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      app: FirebaseApp { {"user":"    app: FirebaseApp {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     app: FirebaseApp {"}}
+[info] >        appStore: [AppStore], {"user":"      appStore: [AppStore],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       appStore: [AppStore],"}}
+[info] >        services_: [Object], {"user":"      services_: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       services_: [Object],"}}
+[info] >        isDeleted_: false, {"user":"      isDeleted_: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       isDeleted_: false,"}}
+[info] >        name_: '[DEFAULT]', {"user":"      name_: '[DEFAULT]',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       name_: '[DEFAULT]',"}}
+[info] >        options_: [Object], {"user":"      options_: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       options_: [Object],"}}
+[info] >        INTERNAL: [FirebaseAppInternals], {"user":"      INTERNAL: [FirebaseAppInternals],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       INTERNAL: [FirebaseAppInternals],"}}
+[info] >        auth: [Function (anonymous)], {"user":"      auth: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       auth: [Function (anonymous)],"}}
+[info] >        appCheck: [Function (anonymous)], {"user":"      appCheck: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       appCheck: [Function (anonymous)],"}}
+[info] >        database: [Function (anonymous)], {"user":"      database: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       database: [Function (anonymous)],"}}
+[info] >        messaging: [Function (anonymous)], {"user":"      messaging: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       messaging: [Function (anonymous)],"}}
+[info] >        storage: [Function (anonymous)], {"user":"      storage: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       storage: [Function (anonymous)],"}}
+[info] >        firestore: [Function (anonymous)], {"user":"      firestore: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       firestore: [Function (anonymous)],"}}
+[info] >        instanceId: [Function (anonymous)], {"user":"      instanceId: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       instanceId: [Function (anonymous)],"}}
+[info] >        installations: [Function (anonymous)], {"user":"      installations: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       installations: [Function (anonymous)],"}}
+[info] >        machineLearning: [Function (anonymous)], {"user":"      machineLearning: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       machineLearning: [Function (anonymous)],"}}
+[info] >        projectManagement: [Function (anonymous)], {"user":"      projectManagement: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       projectManagement: [Function (anonymous)],"}}
+[info] >        securityRules: [Function (anonymous)], {"user":"      securityRules: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       securityRules: [Function (anonymous)],"}}
+[info] >        remoteConfig: [Function (anonymous)], {"user":"      remoteConfig: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       remoteConfig: [Function (anonymous)],"}}
+[info] >        __extended: true {"user":"      __extended: true","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       __extended: true"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      type: 'database', {"user":"    type: 'database',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     type: 'database',"}}
+[info] >      _instanceStarted: false {"user":"    _instanceStarted: false","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     _instanceStarted: false"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    app: FirebaseApp { {"user":"  app: FirebaseApp {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   app: FirebaseApp {"}}
+[info] >      appStore: AppStore { appStore: [Map] }, {"user":"    appStore: AppStore { appStore: [Map] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     appStore: AppStore { appStore: [Map] },"}}
+[info] >      services_: { database: [DatabaseService] }, {"user":"    services_: { database: [DatabaseService] },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     services_: { database: [DatabaseService] },"}}
+[info] >      isDeleted_: false, {"user":"    isDeleted_: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     isDeleted_: false,"}}
+[info] >      name_: '[DEFAULT]', {"user":"    name_: '[DEFAULT]',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     name_: '[DEFAULT]',"}}
+[info] >      options_: { {"user":"    options_: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     options_: {"}}
+[info] >        storageBucket: 'marathon-tracker-app.appspot.com', {"user":"      storageBucket: 'marathon-tracker-app.appspot.com',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       storageBucket: 'marathon-tracker-app.appspot.com',"}}
+[info] >        databaseURL: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb', {"user":"      databaseURL: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       databaseURL: 'http://127.0.0.1:9000/?ns=marathon-tracker-app-default-rtdb',"}}
+[info] >        projectId: 'marathon-tracker-app', {"user":"      projectId: 'marathon-tracker-app',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       projectId: 'marathon-tracker-app',"}}
+[info] >        credential: [RefreshTokenCredential] {"user":"      credential: [RefreshTokenCredential]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       credential: [RefreshTokenCredential]"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      INTERNAL: FirebaseAppInternals { {"user":"    INTERNAL: FirebaseAppInternals {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     INTERNAL: FirebaseAppInternals {"}}
+[info] >        credential_: [RefreshTokenCredential], {"user":"      credential_: [RefreshTokenCredential],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       credential_: [RefreshTokenCredential],"}}
+[info] >        tokenListeners_: [Array] {"user":"      tokenListeners_: [Array]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m       tokenListeners_: [Array]"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      auth: [Function (anonymous)], {"user":"    auth: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     auth: [Function (anonymous)],"}}
+[info] >      appCheck: [Function (anonymous)], {"user":"    appCheck: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     appCheck: [Function (anonymous)],"}}
+[info] >      database: [Function (anonymous)], {"user":"    database: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     database: [Function (anonymous)],"}}
+[info] >      messaging: [Function (anonymous)], {"user":"    messaging: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     messaging: [Function (anonymous)],"}}
+[info] >      storage: [Function (anonymous)], {"user":"    storage: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     storage: [Function (anonymous)],"}}
+[info] >      firestore: [Function (anonymous)], {"user":"    firestore: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     firestore: [Function (anonymous)],"}}
+[info] >      instanceId: [Function (anonymous)], {"user":"    instanceId: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     instanceId: [Function (anonymous)],"}}
+[info] >      installations: [Function (anonymous)], {"user":"    installations: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     installations: [Function (anonymous)],"}}
+[info] >      machineLearning: [Function (anonymous)], {"user":"    machineLearning: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     machineLearning: [Function (anonymous)],"}}
+[info] >      projectManagement: [Function (anonymous)], {"user":"    projectManagement: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     projectManagement: [Function (anonymous)],"}}
+[info] >      securityRules: [Function (anonymous)], {"user":"    securityRules: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     securityRules: [Function (anonymous)],"}}
+[info] >      remoteConfig: [Function (anonymous)], {"user":"    remoteConfig: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     remoteConfig: [Function (anonymous)],"}}
+[info] >      __extended: true {"user":"    __extended: true","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     __extended: true"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    INTERNAL: { {"user":"  INTERNAL: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   INTERNAL: {"}}
+[info] >      delete: [Function: delete], {"user":"    delete: [Function: delete],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     delete: [Function: delete],"}}
+[info] >      forceWebSockets: [Function: forceWebSockets], {"user":"    forceWebSockets: [Function: forceWebSockets],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     forceWebSockets: [Function: forceWebSockets],"}}
+[info] >      forceLongPolling: [Function: forceLongPolling] {"user":"    forceLongPolling: [Function: forceLongPolling]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m     forceLongPolling: [Function: forceLongPolling]"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    getRules: [Function (anonymous)], {"user":"  getRules: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   getRules: [Function (anonymous)],"}}
+[info] >    getRulesJSON: [Function (anonymous)], {"user":"  getRulesJSON: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   getRulesJSON: [Function (anonymous)],"}}
+[info] >    setRules: [Function (anonymous)] {"user":"  setRules: [Function (anonymous)]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m   setRules: [Function (anonymous)]"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  idBeacon null {"user":"idBeacon null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeacon null"}}
+[info] >  idBeacon null {"user":"idBeacon null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m idBeacon null"}}
+[debug] [2023-01-20T07:40:19.012Z] DEBUG: [worker-us-central1-checkBeaconValue-ab1a63da-9b70-4e49-b11e-53c21dc04d72]: IDLE
+[debug] [2023-01-20T07:40:19.012Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  [2023-01-20T07:40:19.013Z]  @firebase/database: FIREBASE WARNING: Using an unspecified index. Your data will be downloaded and filtered on the client. Consider adding ".indexOn": "idMarathon" at /marathon to your security rules for better performance.  {"user":"[2023-01-20T07:40:19.013Z]  @firebase/database: FIREBASE WARNING: Using an unspecified index. Your data will be downloaded and filtered on the client. Consider adding \".indexOn\": \"idMarathon\" at /marathon to your security rules for better performance. ","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-checkBeaconValue"},"extension":{},"message":"\u001b[90m> \u001b[39m [2023-01-20T07:40:19.013Z]  @firebase/database: FIREBASE WARNING: Using an unspecified index. Your data will be downloaded and filtered on the client. Consider adding \".indexOn\": \"idMarathon\" at /marathon to your security rules for better performance. "}}
+[debug] [2023-01-20T07:40:19.014Z] [functions] Finished "checkBeaconValue" in 88.3224ms
