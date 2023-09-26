@@ -1,5 +1,6 @@
 # RunMarathon
-![image](https://github.com/BackToFrancesco/RunMarathon/assets/76614857/da959551-5b3e-43a1-bed2-85e62f4264b8)
+![image](https://github.com/BackToFrancesco/RunMarathon/assets/76614857/3245ed39-b88b-400d-a0b3-2a9ea432ec66)
+
 
 
 
